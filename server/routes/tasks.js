@@ -4,7 +4,6 @@ const store = require('../store')
 
 router.get('/', async (ctx) => {
   ctx.response.body = await store.listTasks()
-  // ctx.status = 200
 })
 
 router.post('/', async (ctx) => {
